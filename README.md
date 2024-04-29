@@ -58,7 +58,7 @@ To configure the Raspberry Pi for the Sensortile, follow these steps:
 
 To set up Node-RED, follow these steps:
 
-1. Download the JSON file `flow.json`.
+1. Download the JSON file `flows.json`.
 2. Import the downloaded file into Node-RED. Within it, there will be a graphical interface to interact with.
 3. Modify the flow inserting the same topic chosen before
 ## Usage
