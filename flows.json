@@ -1,0 +1,545 @@
+[
+    {
+        "id": "12ae6fe3a4395cb2",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b7dbbd2f4fc1fbf2",
+        "type": "mqtt in",
+        "z": "12ae6fe3a4395cb2",
+        "name": "",
+        "topic": "sensorbox1/Magnetometer",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "73dd0102c2465c32",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "dee6b3826f074f95",
+                "4dd1673b1cab313f",
+                "2f468397cafc75ee"
+            ]
+        ]
+    },
+    {
+        "id": "67a0d0ca336f9135",
+        "type": "mqtt in",
+        "z": "12ae6fe3a4395cb2",
+        "name": "",
+        "topic": "sensorbox1/Gyroscope",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "73dd0102c2465c32",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "fe74f83c9ea4c573",
+                "67dd7b1121bc6e05",
+                "d741b178dd4b4397"
+            ]
+        ]
+    },
+    {
+        "id": "ef9f582175c075d8",
+        "type": "mqtt in",
+        "z": "12ae6fe3a4395cb2",
+        "name": "",
+        "topic": "sensorbox1/Accelerometer",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "73dd0102c2465c32",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "c8bc309a94d7b7fb",
+                "feeac5e60c3757dd",
+                "02283edb2e7c18fc"
+            ]
+        ]
+    },
+    {
+        "id": "42fd13e7a7e5dd97",
+        "type": "ui_chart",
+        "z": "12ae6fe3a4395cb2",
+        "name": "",
+        "group": "6d55652b11d1503d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "07ff6158c7eb89aa",
+        "type": "ui_chart",
+        "z": "12ae6fe3a4395cb2",
+        "name": "",
+        "group": "9c715f7262b589f7",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "416ec08fa1aa44cd",
+        "type": "ui_chart",
+        "z": "12ae6fe3a4395cb2",
+        "name": "",
+        "group": "75e645206a58e3d4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98ce91aef31b0717",
+        "type": "debug",
+        "z": "12ae6fe3a4395cb2",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "21abc5572cef93cf",
+        "type": "debug",
+        "z": "12ae6fe3a4395cb2",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8c65cd24023ce384",
+        "type": "debug",
+        "z": "12ae6fe3a4395cb2",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c8bc309a94d7b7fb",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function x",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.x;\nmsg.topic=\"x\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg={\n    payload:[],\n    topic:\"x\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "416ec08fa1aa44cd",
+                "8c65cd24023ce384"
+            ]
+        ]
+    },
+    {
+        "id": "feeac5e60c3757dd",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function y",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.y;\nmsg.topic = \"y\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg = {\n    payload: [],\n    topic: \"y\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "416ec08fa1aa44cd"
+            ]
+        ]
+    },
+    {
+        "id": "02283edb2e7c18fc",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function z",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.z;\nmsg.topic=\"z\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg = {\n    payload: [],\n    topic: \"z\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "416ec08fa1aa44cd"
+            ]
+        ]
+    },
+    {
+        "id": "dee6b3826f074f95",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function x",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.x;\nmsg.topic=\"x\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg={\n    payload:[],\n    topic:\"x\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 20,
+        "wires": [
+            [
+                "42fd13e7a7e5dd97",
+                "98ce91aef31b0717"
+            ]
+        ]
+    },
+    {
+        "id": "4dd1673b1cab313f",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function y",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.y;\nmsg.topic = \"y\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg = {\n    payload: [],\n    topic: \"y\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 60,
+        "wires": [
+            [
+                "42fd13e7a7e5dd97"
+            ]
+        ]
+    },
+    {
+        "id": "2f468397cafc75ee",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function z",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.z;\nmsg.topic=\"z\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg = {\n    payload: [],\n    topic: \"z\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 100,
+        "wires": [
+            [
+                "42fd13e7a7e5dd97"
+            ]
+        ]
+    },
+    {
+        "id": "fe74f83c9ea4c573",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function x",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.x;\nmsg.topic=\"x\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg={\n    payload:[],\n    topic:\"x\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "07ff6158c7eb89aa",
+                "21abc5572cef93cf"
+            ]
+        ]
+    },
+    {
+        "id": "67dd7b1121bc6e05",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function y",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.y;\nmsg.topic = \"y\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg = {\n    payload: [],\n    topic: \"y\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "07ff6158c7eb89aa"
+            ]
+        ]
+    },
+    {
+        "id": "d741b178dd4b4397",
+        "type": "function",
+        "z": "12ae6fe3a4395cb2",
+        "name": "function z",
+        "func": "// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nmsg.payload = msg.payload.z;\nmsg.topic=\"z\";\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Esempio di elaborazione tripletta e invio dei dati al nodo ui_chart\nvar msg = {\n    payload: [],\n    topic: \"z\"\n};\n// Invia i valori di x, y e z come serie di dati al nodo ui_chart\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "07ff6158c7eb89aa"
+            ]
+        ]
+    },
+    {
+        "id": "e2927cc082696e92",
+        "type": "inject",
+        "z": "12ae6fe3a4395cb2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "x",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "416ec08fa1aa44cd",
+                "07ff6158c7eb89aa",
+                "42fd13e7a7e5dd97"
+            ]
+        ]
+    },
+    {
+        "id": "73dd0102c2465c32",
+        "type": "mqtt-broker",
+        "name": "mosquitto",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6d55652b11d1503d",
+        "type": "ui_group",
+        "name": "Magnetometer",
+        "tab": "db0cd931768a6c1e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "9c715f7262b589f7",
+        "type": "ui_group",
+        "name": "Gyroscope",
+        "tab": "db0cd931768a6c1e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "75e645206a58e3d4",
+        "type": "ui_group",
+        "name": "Accelerometer",
+        "tab": "db0cd931768a6c1e",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "db0cd931768a6c1e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
