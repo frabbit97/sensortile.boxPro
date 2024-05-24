@@ -30,20 +30,20 @@ The following Python libraries need to be installed:
     sudo pip3 install "paho-mqtt<2"
   ```
 - Using RPI: [pyusb](https://pypi.org/project/pyusb/)
-    ```bash
+  ```bash
     sudo pip3 install pyusb
 - [ntplib](https://pypi.org/project/ntplib/)
-		```bash
-		sudo pip3 install ntplib
+  ```bash
+    sudo pip3 install ntplib
 
 The following libraries are required to obtain an ID for the SensorTile. They can work only if the BTLE connection is enabled.
 Improvements are necessary in the case multiple SensorTile are present in the area or are connected via USB to the same RPi
 - [bleak](https://pypi.org/project/bleak/)
-		```bash
-		sudo pip3 install bleak
+  ```bash
+    sudo pip3 install bleak
 - [asyncio](https://pypi.org/project/asyncio/)
-		```bash
-		sudo pip3 install asyncio
+  ```bash
+    sudo pip3 install asyncio
 		
 ### Nodered Library
 
