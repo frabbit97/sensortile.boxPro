@@ -1,6 +1,6 @@
 import paho.mqtt.client as mqtt
 class MQTTClient:
-    def __init__(self, broker_address, port, username, password):
+    def __init__(self, broker_address, port, username, password,clean_session):
         self.broker_address = broker_address
         self.port = port
         self.username = username
@@ -10,7 +10,7 @@ class MQTTClient:
         self.client.on_connect = self.on_connect
         self.client.on_publish = self.on_publish
 
-    def __init__(self, broker_address, port):
+    def __init__(self, broker_address, port,clean_session):
         self.broker_address = broker_address
         self.port = port
         self.username = ""
@@ -33,9 +33,16 @@ class MQTTClient:
             print("Connected to MQTT broker")
         else:
             print("Connection to MQTT broker failed, return code:", rc)
+            
+    def on_disconnect(self, client, userdata, rc):
+        if rc != 0:
+            print("Unexpected disconnection from MQTT broker")
+        else:
+            print("Correctly disconnected from MQTT broker")
 
     def on_publish(self, client, userdata, mid):
         print("Message published successfully")
 
-    def publish_message(self, topic, message):
-        self.client.publish(topic, message)
+    def publish_message(self, topic, message,qos):
+        result=self.client.publish(topic, message,qos)
+        return result
